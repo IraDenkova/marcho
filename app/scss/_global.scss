@@ -42,12 +42,13 @@ a{
   max-width: 571px;
   margin: 0 auto 55px;
 }
-.breadcrumbs{
+.breadcrumbs {
   display: inline-flex;
   justify-content: center;
   padding-left: 25px;
   position: relative;
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     width: 16px;
@@ -56,14 +57,17 @@ a{
     top: 20px;
     left: 0;
   }
-  &__list{
+
+  &__list {
     display: flex;
   }
-  &__item{
+
+  &__item {
     color: #727272;
     padding-right: 40px;
     position: relative;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       background-image: url('../images/icons/angle.png');
@@ -72,15 +76,18 @@ a{
       right: 15px;
       top: 10px;
     }
-    &:last-child{
+
+    &:last-child {
       color: $accent;
       padding-right: 0;
-      &::after{
+
+      &::after {
         display: none;
       }
     }
   }
-  &__link{
+
+  &__link {
     color: inherit;
   }
 }
